@@ -20,7 +20,7 @@ class _HomeState extends State<Home> {
     // TODO: Replace with Card1
     const Card1(),
 // TODO: Replace with Card2
-    const Card2(),
+    const Card1(),
 // TODO: Replace with Card3
     const Card3(),
 
@@ -37,16 +37,13 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title:(
-          Row(
-            children: [
-              Image.asset('assets/logofix.png'),
-              Text(' '),
-              Text('Wirepost',
-              style: TextStyle(color: Colors.green))
-            ],
-          )
-        ),
+        title: (Row(
+          children: [
+            Image.asset('assets/logofix.png'),
+            Text(' '),
+            Text('Wirepost', style: TextStyle(color: Colors.green))
+          ],
+        )),
       ),
 // TODO: Show selected tab
       body: pages[_selectedIndex],
