@@ -40,8 +40,8 @@ class _HomeState extends State<Home> {
         title: (Row(
           children: [
             Image.asset('assets/logofix.png'),
-            Text(' '),
-            Text('Wirepost', style: TextStyle(color: Colors.green))
+            const Text(' '),
+            const Text('Wirepost', style: TextStyle(color: Colors.green))
           ],
         )),
       ),
@@ -58,20 +58,20 @@ class _HomeState extends State<Home> {
 // 11
         onTap: _onItemTapped,
 // 6
-        items: <BottomNavigationBarItem>[
-          const BottomNavigationBarItem(
+        items: const <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
             icon: Icon(Icons.home),
             label: 'Home',
           ),
-          const BottomNavigationBarItem(
+          BottomNavigationBarItem(
             icon: Icon(Icons.post_add),
             label: 'Post',
           ),
-          const BottomNavigationBarItem(
+          BottomNavigationBarItem(
             icon: Icon(Icons.brush_outlined),
             label: 'Dashboard',
           ),
-          const BottomNavigationBarItem(
+          BottomNavigationBarItem(
             icon: Icon(Icons.account_circle),
             label: 'Profile',
           ),
