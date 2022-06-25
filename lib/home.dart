@@ -3,6 +3,7 @@ import 'card1.dart';
 import 'card2.dart';
 import 'card3.dart';
 import 'card4.dart';
+import '/pages/profile_page.dart';
 
 // 1
 class Home extends StatefulWidget {
@@ -24,7 +25,7 @@ class _HomeState extends State<Home> {
 // TODO: Replace with Card3
     const Card3(),
 
-    const Card4()
+    ProfilePage()
   ];
 // 9
   void _onItemTapped(int index) {
