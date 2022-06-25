@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:wirepostt/loginpage.dart';
+import 'package:wirepostt/landingpage/loginpage.dart';
 import 'wirepost_theme.dart';
 
 void main() {

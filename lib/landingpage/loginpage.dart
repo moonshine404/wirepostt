@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:wirepostt/home.dart';
-import 'package:wirepostt/signuppage.dart';
+import 'package:wirepostt/landingpage/signuppage.dart';
 
 class loginpage extends StatefulWidget {
   const loginpage({Key? key}) : super(key: key);

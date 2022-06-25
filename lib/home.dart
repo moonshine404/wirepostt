@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'card1.dart';
-import 'card2.dart';
-import 'card3.dart';
-import 'card4.dart';
+import 'package:wirepostt/list.dart';
+import 'homepage.dart';
+import 'contact.dart';
 import '/pages/profile_page.dart';
 
 // 1
@@ -23,7 +22,7 @@ class _HomeState extends State<Home> {
 // TODO: Replace with Card2
     const Card1(),
 // TODO: Replace with Card3
-    const Card3(),
+    const CRUD(),
 
     ProfilePage()
   ];
