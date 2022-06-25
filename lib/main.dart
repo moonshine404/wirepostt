@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:wirepostt/loginpage.dart';
-import 'fooderlich_theme.dart';
+import 'wirepost_theme.dart';
 
 void main() {
   runApp(const MyApp());
