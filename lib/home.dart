@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import '/CRUD/list.dart';
+import '/CRUD/CRUD.dart';
 import 'homepage.dart';
-import '/CRUD/contact.dart';
 import '/pages/profile_page.dart';
 
 // 1
