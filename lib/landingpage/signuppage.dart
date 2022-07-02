@@ -152,40 +152,7 @@ class SignUpState extends State<SignUpWidget> {
                                 height: 1.0,
                                 color: Colors.grey,
                               ),
-                              Column(
-                                 children: <Widget>[
-                                    Text('Genders: ', style: TextStyle(color: Colors.white, fontFamily: "SignikaSemiBold", fontSize: 18.0)),
-                                    ListTile(
-                                      title: const Text('Male'),
-                                      leading: Radio<SingingCharacter>(
-                                        value: SingingCharacter.Male,
-                                        groupValue: _character,
-                                        onChanged: (SingingCharacter? value) {
-                                          setState(() {
-                                            _character = value;
-                                          });
-                                        },
-                                      ),
-                                    ),
-                                    ListTile(
-                                      title: const Text('Female'),
-                                      leading: Radio<SingingCharacter>(
-                                        value: SingingCharacter.Female,
-                                        groupValue: _character,
-                                        onChanged: (SingingCharacter? value) {
-                                          setState(() {
-                                            _character = value;
-                                          });
-                                        },
-                                      ),
-                                    ),  
-                                 ]  
-                              ),
-                              Container(
-                                width: 250.0,
-                                height: 1.0,
-                                color: Colors.grey,
-                              ),
+                             
                               Container(
                                 margin: const EdgeInsets.only(top: 40.0),
                                 decoration: const BoxDecoration(
