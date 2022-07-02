@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'wirepost_theme.dart';
-import 'circle_image.dart';
+import '/wirepost_theme.dart';
+import '/pages/circle_image.dart';
 
 class AuthorCard extends StatelessWidget {
 // 1

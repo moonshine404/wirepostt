@@ -12,10 +12,11 @@ class SignUpWidget extends StatefulWidget {
     return SignUpState();
   }
 }
-
+enum SingingCharacter { Male, Female }
 class SignUpState extends State<SignUpWidget> {
   final FocusNode focusPassword = FocusNode();
   final FocusNode focusUsername = FocusNode();
+  final FocusNode focusNoHp = FocusNode();
   final FocusNode focusConfirmPassword = FocusNode();
 
   final TextEditingController nameController = TextEditingController();
@@ -23,7 +24,9 @@ class SignUpState extends State<SignUpWidget> {
   final TextEditingController passwordController = TextEditingController();
   final TextEditingController confirmPasswordController =
       TextEditingController();
+  final TextEditingController noHpController = TextEditingController();
 
+ SingingCharacter? _character = SingingCharacter.Male;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -111,6 +114,72 @@ class SignUpState extends State<SignUpWidget> {
                                           fontSize: 18.0,
                                           color: Colors.white)),
                                 ),
+                              ),
+                              Container(
+                                width: 250.0,
+                                height: 1.0,
+                                color: Colors.grey,
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.only(
+                                    top: 20.0,
+                                    bottom: 20.0,
+                                    left: 25.0,
+                                    right: 25.0),
+                                child: TextField(
+                                  focusNode: focusNoHp,
+                                  controller: noHpController,
+                                  style: const TextStyle(
+                                      fontFamily: "SignikaSemiBold",
+                                      fontSize: 16.0,
+                                      color: Colors.white),
+                                  decoration: const InputDecoration(
+                                      border: InputBorder.none,
+                                      icon: Icon(
+                                        FontAwesomeIcons.phone,
+                                        color: Colors.white,
+                                        size: 22.0,
+                                      ),
+                                      hintText: "Enter Telephone Number",
+                                      hintStyle: TextStyle(
+                                          fontFamily: "SignikaSemiBold",
+                                          fontSize: 18.0,
+                                          color: Colors.white)),
+                                ),
+                              ),
+                              Container(
+                                width: 250.0,
+                                height: 1.0,
+                                color: Colors.grey,
+                              ),
+                              Column(
+                                 children: <Widget>[
+                                    Text('Genders: ', style: TextStyle(color: Colors.white, fontFamily: "SignikaSemiBold", fontSize: 18.0)),
+                                    ListTile(
+                                      title: const Text('Male'),
+                                      leading: Radio<SingingCharacter>(
+                                        value: SingingCharacter.Male,
+                                        groupValue: _character,
+                                        onChanged: (SingingCharacter? value) {
+                                          setState(() {
+                                            _character = value;
+                                          });
+                                        },
+                                      ),
+                                    ),
+                                    ListTile(
+                                      title: const Text('Female'),
+                                      leading: Radio<SingingCharacter>(
+                                        value: SingingCharacter.Female,
+                                        groupValue: _character,
+                                        onChanged: (SingingCharacter? value) {
+                                          setState(() {
+                                            _character = value;
+                                          });
+                                        },
+                                      ),
+                                    ),  
+                                 ]  
                               ),
                               Container(
                                 width: 250.0,

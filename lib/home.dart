@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:wirepostt/list.dart';
+import '/CRUD/list.dart';
 import 'homepage.dart';
-import 'contact.dart';
+import '/CRUD/contact.dart';
 import '/pages/profile_page.dart';
 
 // 1
